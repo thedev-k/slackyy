@@ -10,7 +10,7 @@ const app = new App({
 });
 
 
-app.command("/astro-bot-apod", async ({ ack, respond }) => {
+app.command("/slackyy-apod", async ({ ack, respond }) => {
     await ack();
 
     try {
@@ -43,7 +43,7 @@ app.command("/astro-bot-apod", async ({ ack, respond }) => {
     }
 });
 
-app.command("/astro-bot-iss", async ({ ack, respond }) => {
+app.command("/slackyy-iss", async ({ ack, respond }) => {
     await ack();
 
     try {
@@ -76,7 +76,7 @@ app.command("/astro-bot-iss", async ({ ack, respond }) => {
 });
 
 
-app.command("/astro-bot-catfact", async ({ ack, respond }) => {
+app.command("/slackyy-catfact", async ({ ack, respond }) => {
     await ack();
     try {
         const response = await axios.get("https://catfact.ninja/fact");
@@ -87,7 +87,7 @@ app.command("/astro-bot-catfact", async ({ ack, respond }) => {
 });
 
 
-app.command("/astro-bot-ping", async ({ command, ack, respond }) => {
+app.command("/slackyy-ping", async ({ command, ack, respond }) => {
     const start = Date.now();
     await ack();
     const latency = Date.now() - start;
@@ -95,15 +95,15 @@ app.command("/astro-bot-ping", async ({ command, ack, respond }) => {
 });
 
 
-app.command("/astro-bot-help", async ({ ack, respond }) => {
+app.command("/slackyy-help", async ({ ack, respond }) => {
     await ack();
     await respond({
         text:
             `Available Commands:
-/astro-bot-ping - Check bot latency
-/astro-bot-apod - Get today's astronomy picture
-/astro-bot-iss - Current ISS location
-/astro-bot-catfact - Get a cat fact`
+/slackyy-ping - Check bot latency
+/slackyy-apod - Get today's astronomy picture
+/slackyy-iss - Current ISS location
+/slackyy-catfact - Get a cat fact`
     });
 });
 
