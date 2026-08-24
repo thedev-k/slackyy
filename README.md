@@ -23,7 +23,7 @@ It uses NASA's API to pull the picture of the day Also a custom command /slackyy
 - /slackyy-iss
 - /slackyy-catfact
 - /slackyy-ping
-- /slacky-help
+- /slackyy-help
 
 # Acknowledgement #
 - Built by thedev-k
